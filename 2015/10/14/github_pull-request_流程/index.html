@@ -12,17 +12,10 @@
 
 很多童鞋可能都注册过GitHub账号，看到一些好的开源库除了给作者Star外，也希望能向项目贡献自己的一份力量，在此我们就简单介绍一下流程。当然如果你没有github账号就赶紧注册一个吧~ 
 
-我们将分为以下几个部分来介绍 Pull Request 流程。
 
 Fork 项目
 
-Clone
-
-增加远程分支
-
-创建新分支
-
-推送到GitHub">
+登录GitHub 账号后，点击目标项目右上方的 Fork 按钮，完成之后，就可以在自己的账户下看到新Fork的仓库，在项目下方">
 <meta property="og:type" content="article">
 <meta property="og:title" content="GitHub Pull Request 流程">
 <meta property="og:url" content="http://yoursite.com/2015/10/14/github_pull-request_流程/index.html">
@@ -33,19 +26,12 @@ Clone
 
 很多童鞋可能都注册过GitHub账号，看到一些好的开源库除了给作者Star外，也希望能向项目贡献自己的一份力量，在此我们就简单介绍一下流程。当然如果你没有github账号就赶紧注册一个吧~ 
 
-我们将分为以下几个部分来介绍 Pull Request 流程。
 
 Fork 项目
 
-Clone
-
-增加远程分支
-
-创建新分支
-
-推送到GitHub">
+登录GitHub 账号后，点击目标项目右上方的 Fork 按钮，完成之后，就可以在自己的账户下看到新Fork的仓库，在项目下方">
 <meta property="og:image" content="http://www.molecularecologist.com/wp-content/uploads/2013/11/github-logo.jpg">
-<meta property="og:updated_time" content="2015-10-14T11:54:28.000Z">
+<meta property="og:updated_time" content="2015-10-14T11:58:40.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="GitHub Pull Request 流程">
 <meta name="twitter:description" content="####GitHub Pull-Request 流程
@@ -54,17 +40,10 @@ Clone
 
 很多童鞋可能都注册过GitHub账号，看到一些好的开源库除了给作者Star外，也希望能向项目贡献自己的一份力量，在此我们就简单介绍一下流程。当然如果你没有github账号就赶紧注册一个吧~ 
 
-我们将分为以下几个部分来介绍 Pull Request 流程。
 
 Fork 项目
 
-Clone
-
-增加远程分支
-
-创建新分支
-
-推送到GitHub">
+登录GitHub 账号后，点击目标项目右上方的 Fork 按钮，完成之后，就可以在自己的账户下看到新Fork的仓库，在项目下方">
   
     <link rel="alternative" href="/atom.xml" title="汪星人VS喵星人" type="application/atom+xml">
   
@@ -149,51 +128,49 @@ Clone
 <blockquote>
 <p>很多童鞋可能都注册过GitHub账号，看到一些好的开源库除了给作者Star外，也希望能向项目贡献自己的一份力量，在此我们就简单介绍一下流程。当然如果你没有github账号就赶紧注册一个吧~ </p>
 </blockquote>
-<p>我们将分为以下几个部分来介绍 <code>Pull Request</code> 流程。</p>
 <ul>
-<li><p>Fork 项目</p>
-</li>
-<li><p>Clone</p>
-</li>
-<li><p>增加远程分支</p>
-</li>
-<li><p>创建新分支</p>
-</li>
-<li><p>推送到GitHub</p>
-</li>
-<li><p>Pull Request</p>
-</li>
-<li><p>等待合并</p>
-</li>
-<li><p>删除分支</p>
-</li>
+<li>Fork 项目</li>
 </ul>
-<p><em><strong>Fork 项目</strong></em></p>
 <p>登录GitHub 账号后，点击目标项目右上方的 <code>Fork</code> 按钮，完成之后，就可以在自己的账户下看到新Fork的仓库，在项目下方也会看到一段<font color="red">“forked from &lt;原始项目名称&gt;”</font>文字。</p>
-<p><em><strong>Clone</strong></em></p>
+<ul>
+<li>Clone</li>
+</ul>
 <p>我们在fork回来的新项目右侧可以看到对应的SSH clone URL ，这里我们可以使用 <code>Terminal</code> clone 项目到本地。</p>
 <pre><code>git clone git@github<span class="class">.com</span>:&lt;github user account&gt;/&lt;project name&gt;<span class="class">.git</span>
 cd &lt;project name&gt;
 </code></pre><p>当然我们也可以点击右侧的 <code>Clone in Destop</code> 或 <code>Download ZIP</code> 下载项目到本地。</p>
-<p><em><strong>增加远程分支</strong></em></p>
+<ul>
+<li>增加远程分支</li>
+</ul>
 <p>在本地仓库中，添加指向原始仓库的远程分支。例如远程分支我们可以命名为 <code>myProject</code></p>
 <pre><code>git remote add myProject git@github.com:<span class="tag">&lt;<span class="title">original</span> <span class="attribute">author</span> <span class="attribute">user</span> <span class="attribute">account</span>&gt;</span>/<span class="tag">&lt;<span class="title">project</span> <span class="attribute">name</span>&gt;</span>.git
 </code></pre><p>通过 <code>myProject</code> 就可以很方便地把本地仓库更新到最新版本，与原始仓库一致。</p>
 <pre><code>git fetch myProject
 git <span class="operator"><span class="keyword">merge</span> myProject/<span class="keyword">master</span></span>
-</code></pre><p><em><strong>创建分支</strong></em></p>
+</code></pre><ul>
+<li>创建分支</li>
+</ul>
 <p>创建一个新的分支并切换到新的分支下，在新创建的分支下进行修改。修改完成后，提交修改，提交时添加注释简洁说明所做的更改。</p>
 <pre><code>git checkout -<span class="tag">b</span> myBranch
 vim README<span class="class">.md</span>
 git commit -am <span class="string">"fix some bla bla"</span>
-</code></pre><p><em><strong>推送到GitHub</strong></em></p>
-<p> 把新分支推送到GitHub, 在GitHub 上 fork的项目界面上就会看到新创建的分支。</p>
-<pre><code><span class="label">git</span> <span class="keyword">push </span>origin myBranch
-</code></pre><p><em><strong>Pull Request</strong></em></p>
+</code></pre><ul>
+<li><p>推送到GitHub</p>
+<p>把新分支推送到GitHub, 在GitHub 上 fork的项目界面上就会看到新创建的分支。</p>
+<p>   git push origin myBranch</p>
+</li>
+</ul>
+<ul>
+<li>Pull Request</li>
+</ul>
 <p>当提交了新的分支时，Github 会自动给出提示是否进行 <code>Compare &amp; pull request</code> ，点击按钮之后进入 <code>Pull Request</code> 界面。在新的界面上，我们可以看到与原项目相比所做的改动。填写提交说明，就可以 <code>Send Pull Request</code> 了。</p>
-<p><em><strong>等待合并</strong></em></p>
+<ul>
+<li>等待合并</li>
+</ul>
 <p>Pull Request 发出后，在原项目 <code>Pull requests</code>会显示所提交的请求。项目管理者对你所做的提交进行检查。如果发现问题，管理者可以在 pull request 页面进行 comment 。你收到通知可以继续在本地进行修改，然后进行 push ，新增加的 commit 会自动显示在 pull request 页面上， 不需要再对新的修改进行 pull request。 如果没问题后，管理者把你的提交合并到项目主分支中并关闭此次 pull request。</p>
-<p><em><strong>删除分支</strong></em></p>
+<ul>
+<li>删除分支</li>
+</ul>
 <p>pull request 被接受之后，你也就成功地向原项目作出了贡献。现在把本地仓库跟原始仓库进行同步，就能看到自己所做的修改了。</p>
 <pre><code><span class="title">git</span> checkout master
 git fetch myProject
