@@ -23,7 +23,7 @@ Fork 项目
 
 登录GitHub 账号后，点击目标项目右上方的 Fork 按钮，完成之后，就可以在自己的账户下看到新Fork的仓库，在项目下方也会看到一段“forked from &amp;lt;原始项目名称&amp;">
 <meta property="og:image" content="http://www.molecularecologist.com/wp-content/uploads/2013/11/github-logo.jpg">
-<meta property="og:updated_time" content="2015-10-14T12:02:54.000Z">
+<meta property="og:updated_time" content="2015-10-14T12:08:14.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="GitHub Pull Request 流程">
 <meta name="twitter:description" content="很多童鞋可能都注册过GitHub账号，看到一些好的开源库除了给作者Star外，也希望能向项目贡献自己的一份力量，在此我们就简单介绍一下流程。当然如果你没有github账号就赶紧注册一个吧~ 
@@ -158,9 +158,9 @@ git commit -am <span class="string">"fix some bla bla"</span>
 <li>删除分支</li>
 </ul>
 <p>pull request 被接受之后，你也就成功地向原项目作出了贡献。现在把本地仓库跟原始仓库进行同步，就能看到自己所做的修改了。</p>
-<pre><code><span class="title">git</span> checkout master
+<pre><code>git checkout master
 git fetch myProject
-git merger myProject/master
+git <span class="operator"><span class="keyword">merge</span> myProject/<span class="keyword">master</span></span>
 </code></pre><p>新创建的分支也可以删除，现在本地删除分支，然后把更改 push 到 GitHub 上，删除远程分支。</p>
 <pre><code><span class="label">git</span> <span class="keyword">branch </span>-d myBranch
 <span class="label">git</span> <span class="keyword">push </span>origin :myBranch

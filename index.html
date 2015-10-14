@@ -143,9 +143,9 @@ git commit -am <span class="string">"fix some bla bla"</span>
 <li>删除分支</li>
 </ul>
 <p>pull request 被接受之后，你也就成功地向原项目作出了贡献。现在把本地仓库跟原始仓库进行同步，就能看到自己所做的修改了。</p>
-<pre><code><span class="title">git</span> checkout master
+<pre><code>git checkout master
 git fetch myProject
-git merger myProject/master
+git <span class="operator"><span class="keyword">merge</span> myProject/<span class="keyword">master</span></span>
 </code></pre><p>新创建的分支也可以删除，现在本地删除分支，然后把更改 push 到 GitHub 上，删除远程分支。</p>
 <pre><code><span class="label">git</span> <span class="keyword">branch </span>-d myBranch
 <span class="label">git</span> <span class="keyword">push </span>origin :myBranch
