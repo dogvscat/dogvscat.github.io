@@ -23,7 +23,7 @@ Fork 项目
 
 登录GitHub 账号后，点击目标项目右上方的 Fork 按钮，完成之后，就可以在自己的账户下看到新Fork的仓库，在项目下方也会看到一段“forked from &amp;lt;原始项目名称&amp;">
 <meta property="og:image" content="http://www.molecularecologist.com/wp-content/uploads/2013/11/github-logo.jpg">
-<meta property="og:updated_time" content="2015-10-14T11:59:43.000Z">
+<meta property="og:updated_time" content="2015-10-14T12:02:54.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="GitHub Pull Request 流程">
 <meta name="twitter:description" content="很多童鞋可能都注册过GitHub账号，看到一些好的开源库除了给作者Star外，也希望能向项目贡献自己的一份力量，在此我们就简单介绍一下流程。当然如果你没有github账号就赶紧注册一个吧~ 
@@ -142,12 +142,11 @@ git <span class="operator"><span class="keyword">merge</span> myProject/<span cl
 vim README<span class="class">.md</span>
 git commit -am <span class="string">"fix some bla bla"</span>
 </code></pre><ul>
-<li><p>推送到GitHub</p>
-<p>把新分支推送到GitHub, 在GitHub 上 fork的项目界面上就会看到新创建的分支。</p>
-<p>   git push origin myBranch</p>
-</li>
+<li>推送到GitHub</li>
 </ul>
-<ul>
+<p>把新分支推送到GitHub, 在GitHub 上 fork的项目界面上就会看到新创建的分支。</p>
+<pre><code><span class="label">git</span> <span class="keyword">push </span>origin myBranch
+</code></pre><ul>
 <li>Pull Request</li>
 </ul>
 <p>当提交了新的分支时，Github 会自动给出提示是否进行 <code>Compare &amp; pull request</code> ，点击按钮之后进入 <code>Pull Request</code> 界面。在新的界面上，我们可以看到与原项目相比所做的改动。填写提交说明，就可以 <code>Send Pull Request</code> 了。</p>
