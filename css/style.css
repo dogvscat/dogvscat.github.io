@@ -1245,11 +1245,13 @@ a.article-title:hover {
 .article-entry pre,
 .article-entry .highlight {
   background: #272822;
-  margin: 0 -20px;
+  margin: auto;
   padding: 15px 20px;
   border-style: solid;
   border-color: #ddd;
-  border-width: 1px 0;
+  border-width: 0px 0;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
   overflow: auto;
   color: #f8f8f2;
   line-height: 22.400000000000002px;
@@ -1286,6 +1288,8 @@ a.article-title:hover {
 .article-entry .highlight table {
   margin: 0;
   width: auto;
+  font-size: 14px;
+  letter-spacing: 1px;
 }
 .article-entry .highlight td {
   border: none;
